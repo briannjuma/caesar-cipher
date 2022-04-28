@@ -45,7 +45,7 @@ public class App {
             System.out.println("See you soon");
         }
         else {
-            System.out.println("");
+            System.out.println("Invalid Selection");
         }
     }
 }

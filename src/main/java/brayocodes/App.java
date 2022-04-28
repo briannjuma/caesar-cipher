@@ -11,16 +11,16 @@ public class App {
         String plainText;
         int shiftKey;
 
-//        System.out.println("1. Encrypt");
-//        System.out.println("2. Decrypt");
-//        System.out.println("3. Exit Application");
-//        System.out.println(" ");
-//
-//        System.out.println("Select one function from menu to proceed ie input 1,2 or 3");
-//
-//        int selection = scanner.nextInt();
-//        scanner.nextLine();
-//
+        System.out.println("1. Encrypt");
+        System.out.println("2. Decrypt");
+        System.out.println("3. Exit Application");
+        System.out.println(" ");
+
+        System.out.println("Select one function from menu to proceed ie input 1,2 or 3");
+
+        int selection = scanner.nextInt();
+        scanner.nextLine();
+
 //        if (selection == 1){
 //            System.out.println("Provide message to Encrypt: ");
 //            plainText = scanner.nextLine().toUpperCase();   // Maintains Uppercase throughout the application

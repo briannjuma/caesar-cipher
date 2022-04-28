@@ -21,16 +21,31 @@ public class App {
         int selection = scanner.nextInt();
         scanner.nextLine();
 
-//        if (selection == 1){
-//            System.out.println("Provide message to Encrypt: ");
-//            plainText = scanner.nextLine().toUpperCase();   // Maintains Uppercase throughout the application
-//            System.out.println("Provide shift key: ");
-//            shiftKey = scanner.nextInt();
-//
-//            Encoder encoder = new Encoder(plainText,shiftKey);
-//            System.out.println(String.format("Input message was: %s", encoder.getUserInput()));
-//            System.out.println(String.format("Encrypted message is: %s", encoder.encrypt()));
+        if (selection == 1){
+            System.out.println("Provide message to Encrypt: ");
+            plainText = scanner.nextLine().toUpperCase();   // Maintains Uppercase throughout the application
+            System.out.println("Provide shift key: ");
+            shiftKey = scanner.nextInt();
 
+            Encoder encoder = new Encoder(plainText,shiftKey);
+            System.out.println(String.format("Input message was: %s", encoder.getUserInput()));
+            System.out.println(String.format("Encrypted message is: %s", encoder.encrypt()));
+        }
+        else if (selection == 2){
+            System.out.println("Provide message to Decrypt: ");
+            plainText = scanner.nextLine().toUpperCase();
+            System.out.println("Provide shift key: ");
+            shiftKey = scanner.nextInt();
+
+            Decoder decoder = new Decoder(plainText,shiftKey);
+            System.out.println(String.format("Input message was: %s", decoder.getUserInput()));
+            System.out.println(String.format("Decrypted message is: %s", decoder.decrypt()));
+        }
+        else if (selection == 3){
+            System.out.println("See you soon");
+        }
+        else {
+            System.out.println("");
         }
     }
 }

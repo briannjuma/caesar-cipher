@@ -45,7 +45,7 @@ public class App {
             System.out.println("See you soon");
         }
         else {
-            System.out.println("Invalid Selection");
+            System.out.println("Invalid menu selection, Restart Application");
         }
     }
 }
